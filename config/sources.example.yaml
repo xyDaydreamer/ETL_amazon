@@ -1,0 +1,37 @@
+schema_version: 1
+sources:
+  snap_reviews:
+    kind: immutable_file
+    path: /opt/airflow/data/movies.txt.gz
+    expected_sha256: 4b6ee09ea4880f3fb197b1407d45dfb08a892fbb48a9e7a2d74aa0572cdcc715
+    expected_reviews: 7911684
+    expected_products: 253059
+    expected_users: 889176
+  amazon_product_page:
+    kind: html
+    url_template: https://www.amazon.com/dp/{asin}
+    obey_robots_txt: true
+    download_delay_seconds: 5
+    concurrent_requests_per_domain: 1
+    retry_times: 2
+    cache_enabled: true
+  ucsd_movies_tv_2018:
+    kind: jsonl_gzip
+    url: https://mcauleylab.ucsd.edu/public_datasets/data/amazon_v2/metaFiles2/meta_Movies_and_TV.json.gz
+    declared_products: 203970
+    role: product_candidate_evidence
+  imdb_non_commercial:
+    kind: tsv_gzip_bundle
+    base_url: https://datasets.imdbws.com/
+    refresh_policy: daily_snapshot_with_manifest
+    role: work_and_person_candidate_evidence
+  wikidata:
+    kind: sparql
+    endpoint: https://query.wikidata.org/sparql
+    role: sparse_external_identifier_evidence
+  tmdb:
+    kind: api
+    base_url: https://api.themoviedb.org/3
+    enabled: false
+    reason: API token and terms acceptance required
+

@@ -1,0 +1,12 @@
+{
+  "candidate_limit": 100,
+  "random_seed": 20261107,
+  "selection_method": "seeded-md5-unattempted-v1",
+  "exclude_asins_with_existing_http_attempts": true,
+  "network_authorized": false,
+  "access_basis": "用户确认老师已核实学校许可；许可文件及具体频率范围尚未由本项目审阅",
+  "request_delay_seconds": 5.0,
+  "concurrency": 1,
+  "max_attempts_per_product": 2,
+  "robots_txt_obey": true
+}

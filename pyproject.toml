@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amazon-movie-integration"
+version = "0.1.0"
+description = "Course ETL project for Amazon movie reviews and multi-source movie metadata"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "Scrapy==2.19.0",
+  "psycopg[binary]==3.3.5",
+  "RapidFuzz==3.14.6",
+  "PyYAML==6.0.3",
+]
+
+[project.scripts]
+amazon-movies = "amazon_movies.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

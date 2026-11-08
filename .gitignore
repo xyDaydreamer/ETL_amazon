@@ -1,0 +1,49 @@
+# Secrets and local configuration
+.env
+*.pem
+*.key
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.tmp/
+
+# Runtime state and large data
+data/
+airflow/logs/
+airflow/plugins/__pycache__/
+data/raw/
+data/snapshots/
+data/work/
+data/quarantine/
+data/exports/
+backups/
+submission/
+*.zip
+*.docx
+*.ppt
+*.pptx
+*.xlsx
+~$*
+*.sqlite
+*.db
+*.parquet
+*.gz
+!config/**/*.gz.example
+
+# Database volumes and credentials
+postgres-data/
+secrets/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# The supplied source is intentionally untracked and read-only.
+movies.txt.gz
+

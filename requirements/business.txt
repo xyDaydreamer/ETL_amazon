@@ -1,0 +1,5 @@
+Scrapy==2.19.0
+psycopg[binary]==3.3.5
+RapidFuzz==3.14.6
+PyYAML==6.0.3
+

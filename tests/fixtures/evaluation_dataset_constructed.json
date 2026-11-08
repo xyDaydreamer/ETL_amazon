@@ -1,0 +1,41 @@
+{
+  "dataset_key": "constructed-evaluation-material-smoke-v1",
+  "entity_type": "movie",
+  "snapshot_id": null,
+  "sampling_rule_version": "constructed-smoke-only-v1",
+  "development_exclusion": {
+    "stage4_first50_excluded": true,
+    "left_entity_keys": [],
+    "note": "Constructed technical fixture; never use for coursework metrics."
+  },
+  "pairs": [
+    {
+      "left_entity_key": "fixture:product:movie-a",
+      "right_entity_key": "imdb:tt0000001",
+      "stratum": "constructed_smoke",
+      "left_display": {
+        "title": "Constructed Product A",
+        "year_evidence": "unknown",
+        "people": ["Example Person"]
+      },
+      "right_display": {
+        "title": "Constructed Candidate A",
+        "year": 2001,
+        "type": "movie",
+        "people": ["Example Person"]
+      },
+      "evidence_display": [
+        {
+          "kind": "warning",
+          "text": "This row exists only to validate rendering and blank-answer import behavior."
+        }
+      ],
+      "source_links": [
+        {
+          "label": "IMDb candidate page (link-format smoke test)",
+          "url": "https://www.imdb.com/title/tt0000001/"
+        }
+      ]
+    }
+  ]
+}

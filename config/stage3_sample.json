@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "ucsd_max_records": 100,
+  "asins": [
+    "0001517791",
+    "0001526863",
+    "0005019281",
+    "0005054885",
+    "0005055121",
+    "0005059836"
+  ],
+  "imdb_candidates": [
+    {
+      "asin": "0005019281",
+      "tconst": "tt0078764",
+      "suggestion_url": "https://v2.sg.media-imdb.com/suggestion/t/tt0078764.json",
+      "support_url": "https://en.wikipedia.org/api/rest_v1/page/summary/An_American_Christmas_Carol",
+      "candidate_origin": "title_lookup",
+      "expected_title": "An American Christmas Carol"
+    }
+  ],
+  "page_validation_asins": ["0005019281"]
+}

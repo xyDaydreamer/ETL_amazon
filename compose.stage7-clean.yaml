@@ -1,0 +1,8 @@
+services:
+  postgres:
+    ports: !override
+      - "55432:5432"
+  airflow-api-server:
+    ports: !override
+      - "18080:8080"
+
